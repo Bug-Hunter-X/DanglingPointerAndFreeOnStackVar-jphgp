@@ -1,0 +1,1 @@
+int main() {    int x = 10;    int *ptr = &x;    *ptr = 20;    printf("%d\n", x); // Output: 20    free(ptr); // ERROR: Attempting to free a pointer to a stack variable    return 0;}
